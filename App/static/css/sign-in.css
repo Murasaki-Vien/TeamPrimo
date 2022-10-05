@@ -1,0 +1,130 @@
+body{
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    padding-top: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+    background-image: url('../images/cebu-cityline.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.bold-span{
+    font-weight: bold;
+}
+
+.container{
+    height: 550px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    max-width: 900px;
+    min-width: 550px;
+
+}
+
+.right-section{
+    border: none;
+    box-shadow: 10px 10px 25px 5px grey;
+    min-width: 200px;
+    padding: 30px;
+    background-color: white;
+}
+
+.form-info{
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(229, 229, 229);
+}
+
+.form-groups{
+    display: flex;
+    margin-top: 20px;
+    height: 45px;
+}
+
+.control-box{
+    padding-left: 10px;
+    display: flex;
+    width: 100%;
+    height: 43px;
+	background: #f2f2f2;
+	box-shadow: none;
+    border: none;
+}
+
+.btn-signin{
+    height: 40px;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    font-family: Roboto, sans-serif;
+    background-color: rgb(95, 105, 251);
+    border: none;
+    border-radius: 5px;
+}
+
+.remember-lbl{
+    font-size: 15px;
+}
+
+.btn-signin:hover{
+    cursor: pointer;
+    background-color: rgba(95, 105, 251, 0.9);
+}
+
+.btn-signin:active{
+    background-color: rgba(95, 105, 251, 0.5); 
+}
+
+.control-box::placeholder{
+    font-family: Roboto, sans-serif;
+}
+
+.left-section{
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    border-radius: 2px;
+    border: none;
+    background-color: rgb(50, 50, 50);
+    color: white;
+}
+
+.left-groups{
+    height: 45px;
+    text-align: center;
+}
+
+.signup-pan{
+    position: absolute;
+    bottom: 190px;
+}
+
+
+.btn-signup-ref{
+    padding: 10px 30px 10px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+    height: 40px;
+    width: 129px;
+    border-style: double;
+    border-width: 2px;
+    text-decoration: none;
+    background-color: rgb(95, 105, 251);
+    border-color: white;
+    border-radius: 20px;
+}
+
+.btn-signup-ref:hover{
+    background-color: rgba(95, 105, 251,0.5);
+    cursor: pointer;
+}
+
+.btn-signup-ref:active{
+    background-color: rgba(95, 105, 251,0.1);
+}

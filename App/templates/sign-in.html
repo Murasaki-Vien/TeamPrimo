@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title> Sign In - Login to your account</title>
+        <link rel="stylesheet" href="../static/css/sign-in.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" 
+        rel="stylesheet">
+    </head>
+   
+    <body>
+        <main class = "container"> 
+            <div class="left-section">
+                <div class="left-groups">
+                        <span class="bold-span">
+                            Are you a new user? 
+                        </span>
+                    </div>
+                    <div class="left-groups">
+                        Click Sign up below to register!
+                    </div>
+                    <div class="signup-pan">
+                        
+                            <a class="btn-signup-ref" target="_self" href="{{url_for('forms.SignUpPage')}}">
+                                Sign Up
+                            </a>
+                    </div>
+            </div>
+
+            <div class="right-section">
+                <form method="POST">
+
+                    <div class="form-info">
+                        <h2>Sign In</h2>
+                        <p>Fill in this form to login and access Busog-Laag!</p>
+                    </div>
+    
+                    <div class="form-groups">
+                        <input class="control-box" type="email" placeholder="Enter your Email"
+                            name="email" required="required">
+                    </div>
+    
+                    <div class="form-groups">
+                        <input class="control-box" type="password" placeholder="Password"
+                            name="password" required="required">
+                    </div>
+                    
+                    <div class="form-groups">
+                        <button type="submit" value="" class="btn-signin">Sign In</button>
+                    </div>
+    
+                </form>
+            </div>
+        </main>       
+    </body>
+</html>
