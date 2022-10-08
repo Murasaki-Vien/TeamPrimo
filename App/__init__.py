@@ -17,11 +17,13 @@ def createwebsite():
 
     from App.forms.route import forms
     from App.home.route import home
+    from App.dashboard.route import dashboard
 
     app.register_blueprint(forms, url_prefix="/")
     app.register_blueprint(home, url_prefix="/")
+    app.register_blueprint(dashboard, url_prefix="/")
 
-    from App.models import User, Review, tempUser
+    from App.models import User, Review, tempUser, CebuPlaces
     
 
     login_manager = LoginManager()

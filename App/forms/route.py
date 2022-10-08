@@ -44,7 +44,7 @@ def SignInPage():
                 if check_password_hash(user.password, password):
                     flash("Logged in Successfully", category='success')
                     login_user(user)
-                    return redirect(url_for("home.UserHome", MyAcc=email))
+                    return redirect(url_for("dashboard.dashboardPage", MyAcc=email))
                 else:
                     flash("Incorrect password", category="error")  
             else:
@@ -125,14 +125,12 @@ def verify(user_id):
             login_user(user)
             flash('Account created', category='success')
 
-            return redirect(url_for("home.UserHome", MyAcc=current_user.email))
+            return redirect(url_for("dashboard.dashboardPage", MyAcc=current_user.email))
         else:
             return "<h1>Incorrect</h1>"
             
 
-    return render_template("verification.html", U_Id = user_id)
-
-
+    return render_template("verification.html", U_Id=user_id)
 
 
 
@@ -140,4 +138,4 @@ def verify(user_id):
 @login_required
 def Logout():
     logout_user()
-    return redirect(url_for("forms.LoginPage"))
+    return redirect(url_for("home.HomePage"))

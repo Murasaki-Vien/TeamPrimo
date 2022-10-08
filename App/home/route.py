@@ -9,8 +9,4 @@ def HomePage():
 
     return render_template("index.html")
 
-@home.route("/home/<MyAcc>")
-def UserHome(MyAcc):
-    return render_template("home1.html", email=MyAcc)
-
 
