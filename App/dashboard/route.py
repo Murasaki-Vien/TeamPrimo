@@ -81,23 +81,23 @@ def TspotsPage(MyAcc, spot):
     elif spot == "Santiago White Beach":
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         content = cebu_places.information
-        picture1 = "../static/tspic/"
-        picture2 = ""
-        picture3 = ""
+        picture1 = "/static/tspic/SantiagoWhiteBeach1.jpg"
+        picture2 = "/static/tspic/SantiagoWhiteBeach2.jpg"
+        picture3 = "/static/tspic/SantiagoWhiteBeach3.jpg"
 
     elif spot == "Blue Water Marigo Beach Resort":
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         content = cebu_places.information
-        picture1 = ""
-        picture2 = ""
-        picture3 = ""
+        picture1 = "/static/tspic/MaribagoBeachResost1.jpg"
+        picture2 = "/static/tspic/MaribagoBeachResost2.jpg"
+        picture3 = "/static/tspic/MaribagoBeachResost3.jpg"
 
     elif spot == "KAWASAN FALLS - BADIAN, CEBU":
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         content = cebu_places.information
-        picture1 = ""
-        picture2 = ""
-        picture3 = "" 
+        picture1 = "/static/tspic/kawasanfalls1.jpg"
+        picture2 = "/static/tspic/kawasanfalls2.jpg"
+        picture3 = "/static/tspic/kawasanfalls3.jpg" 
 
     #For Restaurants
 
