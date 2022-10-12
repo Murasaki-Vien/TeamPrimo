@@ -148,66 +148,66 @@ def TspotsPage(MyAcc, spot):
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         TspotsName = cebu_places.name
         content = cebu_places.information
-        picture1 = ""
-        picture2 = ""
-        picture3 = ""
-        picture4 = ""
-        picture5 = ""
-        picture6 = ""
+        picture1 = "/static/rstaurnts/Anzani1.jpg"
+        picture2 = "/static/rstaurnts/Anzani2.jpg"
+        picture3 = "/static/rstaurnts/Anzani3.jpg"
+        picture4 = "/static/rstaurnts/AnzaniMenu1.jpg"
+        picture5 = "/static/rstaurnts/AnzaniMenu2.jpg"
+        picture6 = "/static/rstaurnts/AnzaniMenu3.jpg"
     
     elif spot == "Amihan Restaurant Malapascua":
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         TspotsName = cebu_places.name
         content = cebu_places.information
-        picture1 = ""
-        picture2 = ""
-        picture3 = ""
-        picture4 = ""
-        picture5 = ""
-        picture6 = ""
+        picture1 = "/static/rstaurnts/Amihan1.jpg"
+        picture2 = "/static/rstaurnts/Amihan2.jpg"
+        picture3 = "/static/rstaurnts/Amihan3.jpg"
+        picture4 = "/static/rstaurnts/AmihanMenu1.jpg"
+        picture5 = "/static/rstaurnts/AmihanMenu2.jpg"
+        picture6 = "/static/rstaurnts/AmihanMenu3.jpg"
     
     elif spot == "Smooth Cafe, Moalboal":
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         TspotsName = cebu_places.name
         content = cebu_places.information
-        picture1 = ""
-        picture2 = ""
-        picture3 = ""
-        picture4 = ""
-        picture5 = ""
-        picture6 = ""
+        picture1 = "/static/rstaurnts/SmoothCafe1.jpg"
+        picture2 = "/static/rstaurnts/SmoothCafe2.jpg"
+        picture3 = "/static/rstaurnts/SmoothCafe3.jpg"
+        picture4 = "/static/rstaurnts/SmoothCafeMenu1.jpg"
+        picture5 = "/static/rstaurnts/SmoothCafeMenu2.jpg"
+        picture6 = "/static/rstaurnts/SmoothCafeMenu3.jpg"
     
     elif spot == "The Pig & Palm":
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         TspotsName = cebu_places.name
         content = cebu_places.information
-        picture1 = ""
-        picture2 = ""
-        picture3 = ""
-        picture4 = ""
-        picture5 = ""
-        picture6 = ""
+        picture1 = "/static/rstaurnts/PigandPalm1.jpg"
+        picture2 = "/static/rstaurnts/PigandPalm2.jpg"
+        picture3 = "/static/rstaurnts/PigandPalm3.jpg"
+        picture4 = "/static/rstaurnts/PigandPalmMenu1.jpg"
+        picture5 = "/static/rstaurnts/PigandPalmMenu2.jpg"
+        picture6 = "/static/rstaurnts/PigandPalmMenu3.jpg"
     
     elif spot == "Thai-Phoon, Bantayan Island":
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         TspotsName = cebu_places.name
         content = cebu_places.information
-        picture1 = ""
-        picture2 = ""
-        picture3 = ""
-        picture4 = ""
-        picture5 = ""
-        picture6 = ""
+        picture1 = "/static/rstaurnts/Thai1.jpg"
+        picture2 = "/static/rstaurnts/Thai2.jpg"
+        picture3 = "/static/rstaurnts/Thai3.jpg"
+        picture4 = "/static/rstaurnts/ThaiMenu1.jpg"
+        picture5 = "/static/rstaurnts/ThaiMenu2.jpg"
+        picture6 = "/static/rstaurnts/ThaiMenu3.jpg"
 
     elif spot == "Entoy's Bakasihan, Cordova":
         cebu_places=CebuPlaces.query.filter_by(name=spot).first()
         TspotsName = cebu_places.name
         content = cebu_places.information
-        picture1 = ""
-        picture2 = ""
-        picture3 = ""
-        picture4 = ""
-        picture5 = ""
-        picture6 = ""
+        picture1 = "/static/rstaurnts/entoys-bakasihan-cordova1.jpg"
+        picture2 = "/static/rstaurnts/entoys-bakasihan-cordova2.jpg"
+        picture3 = "/static/rstaurnts/entoy-s-bakasihan-cordova3.jpg"
+        picture4 = "/static/rstaurnts/entoys-bakasihan-cordova4.jpg"
+        picture5 = "/static/rstaurnts/entoys-bakasihan-cordova5.jpg"
+        picture6 = "/static/rstaurnts/entoys-bakasihan-cordova6.jpg"
         
     return render_template("mc-info.html", email=MyAcc, places=spot, cont=content, picture1=picture1, picture2=picture2, picture3=picture3, picture4=picture4, picture5=picture5, picture6=picture6, TsName=TspotsName)
