@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html data-wf-domain="index.html" data-wf-page="62eb214e02a9b369428bbbea"
-    data-wf-site="625ec8baec772453c4766aed" lang="en">
+<html data-wf-domain="index.html" data-wf-page="62eb214e02a9b369428bbbea" data-wf-site="625ec8baec772453c4766aed" lang="en">
 <head>
     <meta charset="utf-8" />
     <title>Busog-Laag sa Cebu</title>  
     <link href="../static/css/index.css" rel="stylesheet" type="text/css" />
-    <link href="../static/image/logo-icon.png"
-        rel="shortcut icon" type="image/x-icon" />
-    <link href="../static/image/Busog-LaagSaCebu-logopng.png"
-        rel="apple-touch-icon" />
+    <link href="../static/image/logo-icon.png"  rel="shortcut icon" type="image/x-icon" />
+    <link href="../static/image/Busog-LaagSaCebu-logopng.png" rel="apple-touch-icon" />
     <style>
         @media only screen and (min-width: 61.9375em) and (max-width: 85.625em) {
             .nav-link {
@@ -40,9 +37,9 @@
                             src="../static/image/Busog-LaagSaCebu-logopng.png" alt="logo" width="258" class="logo-image" /></a>
                 </div>
                 <nav role="navigation" class="nav-menu w-nav-menu">
-                    <a href="services.html" class="nav-link w-nav-link">Services</a>
-                    <a href="about-us.html" class="nav-link w-nav-link">About Us</a>
-                    <a href="contact-us.html" class="nav-link w-nav-link">Contact Us</a>
+                    <a href="{{url_for('home.AboutPage')}}" class="nav-link w-nav-link">Services</a>
+                    <a href="{{url_for('home.AboutPage')}}" class="nav-link w-nav-link">About Us</a>
+                    <a href="{{url_for('home.AboutPage')}}" class="nav-link w-nav-link">Contact Us</a>
                 </nav>
                 <div class="menu-button w-nav-button">
                     <img src="https://assets.website-files.com/625ec8baec772453c4766aed/625ec8baec77244a28766bac_icon-menu.svg"
