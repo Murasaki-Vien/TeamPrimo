@@ -21,7 +21,6 @@ def SignInPage():
         if email != "":
             if user:
                 if check_password_hash(user.password, password):
-                    flash("Logged in Successfully", category='success')
                     login_user(user)
                     return redirect(url_for("dashboard.dashboardPage", MyAcc=email))
                 else:
@@ -36,7 +35,7 @@ def SignInPage():
 
 @forms.route("/sign-up", methods=['GET', 'POST'])
 def SignUpPage():
-    if request.method == 'POST':
+    if request.method == "POST":
         email = request.form.get("email")
         username = request.form.get("username")
         password1 = request.form.get("password1")
@@ -80,7 +79,7 @@ def SignUpPage():
 @forms.route("/sign-up/verify/<int:user_id>", methods=[ 'GET', 'POST'])
 def verify(user_id):
 
-    if request.method == 'POST':
+    if request.method == "POST":
         value = request.form.get("value")
         val = int(value)
         
