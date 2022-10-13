@@ -1,35 +1,14 @@
-import email
 from flask import Blueprint, render_template, request, flash, redirect, url_for
 from flask_login import login_required, login_user, logout_user, current_user
 from werkzeug.security import generate_password_hash, check_password_hash
-from App import db, app
 from App.models import User, tempUser
-from flask_mail import Mail, Message
+from flask_mail import  Message
+from App import db, mail
 import random
 
 
-
-
 forms = Blueprint("forms", __name__)
-
-
 vCode = random.randint(11111,99999)
-
-app.config['DEBUG'] = True
-app.config['TESTING'] = False
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config["SECRET_KEY"] = "LKJVKLXJCHVLIHEURHQP"
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
-#app.config['MAIL_DEBUG'] = True
-app.config['MAIL_USERNAME'] = 'GVLang1234@gmail.com'
-app.config['MAIL_PASSWORD'] = 'xoqjnshkhmkeukpd'
-#app.config['MAIL_DEFAULT_SENDER'] = 'GVLang1234@gmail.com'
-#app.config['MAIL_MAX_EMAILS'] = None
-#app.config['MAIL_SUPPRESS_SEND'] = False
-#app.config['MAIL_ASCII_ATTACHMENTS'] = False
-
 
 
 @forms.route("/sign-in", methods=['GET', 'POST'])
@@ -53,7 +32,7 @@ def SignInPage():
 
     return render_template("sign-in.html")
 
-mail = Mail(app)
+
 
 @forms.route("/sign-up", methods=['GET', 'POST'])
 def SignUpPage():
@@ -64,7 +43,6 @@ def SignUpPage():
         password2 = request.form.get("password2")
         
         user = User.query.filter_by(email=email).first()
-
 
         if user:
             print("Account already exists")
@@ -99,8 +77,6 @@ def SignUpPage():
     return render_template("sign-up.html")
 
 
-
-
 @forms.route("/sign-up/verify/<int:user_id>", methods=[ 'GET', 'POST'])
 def verify(user_id):
 
@@ -131,7 +107,6 @@ def verify(user_id):
             
 
     return render_template("verification.html", U_Id=user_id)
-
 
 
 @forms.route("/logout")
