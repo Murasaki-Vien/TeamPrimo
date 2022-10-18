@@ -39,7 +39,7 @@
                             src="/static/image/Busog-LaagSaCebu-logopng.png" alt="logo" width="258" class="logo-image" /></a>
                 </div>
                 <nav role="navigation" class="nav-menu w-nav-menu">
-                    <a href="services.html" class="nav-link w-nav-link">Services</a>
+                    <a href="{{url_for('dashboard.carRentalPage', MyAcc=current_user.email)}}" class="nav-link w-nav-link">Car-Rental</a>
                     <a href="about-us.html" class="nav-link w-nav-link">About Us</a>
                     <a href="contact-us.html" class="nav-link w-nav-link">Contact Us</a>
                 </nav>
@@ -47,7 +47,7 @@
                     <img src="https://assets.website-files.com/625ec8baec772453c4766aed/625ec8baec77244a28766bac_icon-menu.svg"
                         alt="" class="menu-icon" />
                 </div>
-                <a href="sign-in.html" class="button _20l-margin w-button">Account</a>
+                <a href="{{url_for('dashboard.dashboardPage', MyAcc=current_user.email)}}" class="button _20l-margin w-button">{{current_user.email}}</a>
             </div>
         </div>
         <div data-w-id="f5047796-1d62-8e15-8c25-ba81be0c693d" class="navigation-bottom-border"></div>
@@ -256,17 +256,7 @@
                 }
             </style>  
         </div> <br><br>
-     
-        <!-- AGODA API -->
-           <div class="" style="width: 100%; box-sizing: border-box">
-            <div align="center">
-                <div id="adgshp-484006247"></div>
-                <script src="//cdn0.agoda.net/images/sherpa/js/sherpa_init1_08.min.js"></script>
-                <script>var stg = new Object(); stg.crt = "14946479992639"; stg.version = "1.04"; stg.id = stg.name = "adgshp-484006247"; 
-                stg.width = "900px"; stg.height = "302px"; stg.ReferenceKey = "1BAKX73geuaob1Uqklbkkg=="; stg.Layout = "Oneline"; stg.Language = "en-us"; 
-                stg.Cid = "1811706"; stg.City = "4001"; stg.DestinationName = "Cebu, Philippines"; stg.OverideConf = false; new AgdSherpa(stg).initialize();</script>
-            </div>
-        </div> <br><br>
+         <br><br>
         <!-- MORE INFO -->
         <div class="section-cta">
             <div class="container-3">
@@ -298,13 +288,10 @@
                             <a href="about-us.html" class="footer-link">About Us</a>
                         </h6>
                         <h6 class="h6-heading light">
-                            <a href="services.html" class="footer-link">Services</a>
+                            <a href="{{url_for('dashboard.carRentalPage', MyAcc=current_user.email)}}" class="footer-link">Car-Rental</a>
                         </h6>
                         <h6 class="h6-heading light">
                             <a href="contact-us.html" class="footer-link">Contact Us</a>
-                        </h6>
-                        <h6 class="h6-heading light">
-                            <a href="profile.html" class="footer-link">Profile</a>
                         </h6>
                         <h6 class="h6-heading light last">
                             <a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a>

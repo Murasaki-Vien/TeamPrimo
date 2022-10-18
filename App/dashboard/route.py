@@ -1,5 +1,5 @@
 from flask import Blueprint, render_template, url_for, redirect, request
-from flask_login import login_required
+from flask_login import login_required, current_user
 from App.models import CebuPlaces
 
 
@@ -211,3 +211,9 @@ def TspotsPage(MyAcc, spot):
         picture6 = "/static/rstaurnts/entoys-bakasihan-cordova6.jpg"
         
     return render_template("mc-info.html", email=MyAcc, places=spot, cont=content, picture1=picture1, picture2=picture2, picture3=picture3, picture4=picture4, picture5=picture5, picture6=picture6, TsName=TspotsName)
+
+@dashboard.route("dashboard/<MyAcc>/car-rentals")
+@login_required
+def carRentalPage(MyAcc):
+    
+    return render_template("rentalpage.html", email=MyAcc)
