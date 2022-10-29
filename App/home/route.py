@@ -10,6 +10,6 @@ def HomePage():
 @home.route("/home/about")
 def AboutPage():
 
-    return render_template("about.html")
+    return render_template("about-us.html")
 
 

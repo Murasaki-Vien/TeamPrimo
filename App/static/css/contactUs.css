@@ -2377,6 +2377,12 @@ h3 {
     font-weight: 500;
     letter-spacing: -0.35px;
 }
+.us{
+    color: #e09b2d;
+}
+.serve{
+    color: #e09b2d;
+}
 
 h4 {
     margin-top: 10px;
@@ -6636,6 +6642,7 @@ figcaption {
     -ms-flex-align: stretch;
     align-items: stretch;
     background-color: #e0e0e0;
+    background-image: url(./);
 }
 
 .contact-block {
@@ -6727,6 +6734,11 @@ figcaption {
     position: relative;
     width: 40%;
     min-height: 800px;
+    background-image: url(../image/trial.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: right;
 }
 
 .form-contact-title {

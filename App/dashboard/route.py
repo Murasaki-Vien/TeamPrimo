@@ -1,6 +1,9 @@
-from flask import Blueprint, render_template, url_for, redirect, request
+import email
+from flask import Blueprint, render_template, url_for, redirect, request, flash
 from flask_login import login_required, current_user
 from App.models import CebuPlaces
+from flask_mail import Message
+from App import mail
 
 
 dashboard = Blueprint("dashboard", __name__)
@@ -217,3 +220,25 @@ def TspotsPage(MyAcc, spot):
 def carRentalPage(MyAcc):
     
     return render_template("rentalpage.html", email=MyAcc)
+
+@dashboard.route("/dashboard/<MyAcc>/about-Us")
+@login_required
+def aboutUsPage(MyAcc):
+    return render_template("about-us.html", email=MyAcc)
+
+
+@dashboard.route("/dashboard/<MyAcc>/contact-Us", methods=['GET', 'POST'])
+@login_required
+def contactUsPage(MyAcc):
+    if request.method == "POST":
+        concern = request.form.get("concern")
+        gmail = request.form.get("email")
+        Fname = request.form.get("Fname")
+
+        if gmail != "":
+            msg = Message(Fname+ " - "+ gmail, sender=gmail, recipients=['GVLang1234@gmail.com'])
+            msg.body = "My Concern is " +concern
+            mail.send(msg)
+            return redirect(url_for("dashboard.dashboardPage", MyAcc=current_user.email))
+
+    return render_template("contact-us.html", email=MyAcc)

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/cb4ab84028.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-  <link rel="stylesheet" href="../static/loginform.css">
+  <link rel="stylesheet" href="/static/css/verification.css">
   <title>verification</title>
 </head>
 <body>
@@ -22,11 +22,6 @@
         <input id="value" name="value" type="value">
         <input id="value" type ="submit" class = "btn btn-block login-btn mb-4" value = "Verify"> 
 
-      
-      
-        <div class="resendCode">
-          <p>Didn't receive the code?<a href="{{url_for('dashboard.dashboardPage', MyAcc=current_user.email)}}">Resend</a></p>
-        </div>
        
       </div>
   </form>

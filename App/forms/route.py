@@ -23,11 +23,6 @@ def SignInPage():
                 if check_password_hash(user.password, password):
                     login_user(user)
                     return redirect(url_for("dashboard.dashboardPage", MyAcc=email))
-                else:
-                    flash("Incorrect password", category="error")  
-            else:
-                flash("Email does not exist.", category='error')  
-            
 
     return render_template("sign-in.html")
 
@@ -45,25 +40,18 @@ def SignUpPage():
 
         if user:
             print("Account already exists")
-            flash("Account already exists", category='error')
         elif len(email) < 4:
             print("email must be greater than 3 characters.")
-            flash("email must be greater than 3 characters.", category='error')
         elif len(username) < 2:
             print("Firstname must have greater than 2 characters long.")
-            flash("Firstname must have greater than 2 characters long.", category='error')
         elif password1 != password2:
             print("Password1 and Password2 Mismatch")
-            flash ("Password1 and Password2 Mismatch", category='error')
         elif len(password1) < 7:
             print("Password1 must have greater that 7 characters")
-            flash("Password1 must have greater that 7 characters", category='error')
         else:
             number = str(vCode)
 
             temp_new_user = tempUser(temp_mail=email, temp_userName=username, temp_password=generate_password_hash(password1, method='sha256'))
-
-            print(temp_new_user.temp_mail)
 
             db.session.add(temp_new_user)                       
             db.session.commit()
@@ -98,13 +86,11 @@ def verify(user_id):
             user = User.query.filter_by(email=g_email).first()
 
             login_user(user)
-            flash('Account created', category='success')
 
             return redirect(url_for("dashboard.dashboardPage", MyAcc=current_user.email))
         else:
             return "<h1>Incorrect</h1>"
             
-
     return render_template("verification.html", U_Id=user_id)
 
 

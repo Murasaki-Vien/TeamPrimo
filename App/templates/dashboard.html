@@ -33,20 +33,20 @@
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
                 data-easing2="ease" role="banner" class="navbar w-nav">
                 <div class="logo-div">
-                    <a href="../templates/dashboard.html" aria-current="page" class="logo w-nav-brand w--current"><img
+                    <a aria-current="page" class="logo w-nav-brand w--current"><img
                         src="../static/image/Busog-LaagSaCebu-logopng.png" alt="logo" width="258" class="logo-image" /></a>
                 </div>
                 <nav role="navigation" class="nav-menu w-nav-menu">
                     <a href="{{url_for('dashboard.carRentalPage', MyAcc=current_user.email)}}" class="nav-link w-nav-link">Car-Rental</a>
-                    <a href="about-us.html" class="nav-link w-nav-link">About Us</a>
-                    <a href="contact-us.html" class="nav-link w-nav-link">Contact Us</a>
+                    <a href="{{ url_for('dashboard.aboutUsPage', MyAcc=current_user.email) }}" class="nav-link w-nav-link">About Us</a>
+                    <a href="{{ url_for('dashboard.contactUsPage', MyAcc=current_user.email) }}" class="nav-link w-nav-link">Contact Us</a>
                     <a href="{{ url_for('forms.Logout') }}" class="nav-link w-nav-link" style="color:red">Logout</a>
                 </nav>
                 <div class="menu-button w-nav-button">
                     <img src="https://assets.website-files.com/625ec8baec772453c4766aed/625ec8baec77244a28766bac_icon-menu.svg"
                         alt="" class="menu-icon" />
                 </div>
-                <a href="sign-in.html" class="button _20l-margin w-button">{{current_user.email}}</a>
+                <a href="{{url_for('dashboard.dashboardPage', MyAcc=current_user.email)}}" class="button _20l-margin w-button">{{current_user.email}}</a>
             </div>
         </div>
         <div data-w-id="f5047796-1d62-8e15-8c25-ba81be0c693d" class="navigation-bottom-border"></div>
@@ -114,7 +114,7 @@
                     </div>
                     <div class="three-services-div">
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                            <a class="w-inline-block"
                                 target="_blank"><img src="https://backpackingwithabook.com/wp-content/uploads/2022/08/@run.away_mermaid-moalboal-sardine-run.jpg" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
@@ -122,7 +122,7 @@
                             </div>
                         </div>
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                            <a class="w-inline-block"
                                 target="_blank"><img src="https://www.jonnymelon.com/wp-content/uploads/2019/10/virgin-island-bantayan-17.jpg" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                            <a class="w-inline-block"
                                 target="_blank"><img src="https://jontotheworld.com/wp-content/uploads/2021/06/Santiago-White-Beach-in-Camotes.jpg" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
@@ -140,7 +140,7 @@
                         </div>
                         <div class="three-services-div">
                             <div class="service-wrapper">
-                                <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                                <a class="w-inline-block"
                                     target="_blank"><img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/47974212.jpg?k=69587671d6fa3f152283163dba591760a9f1a5b8c945d2d4408ce97576575f39&o=&hp=1" loading="lazy" sizes="100vw" alt=""
                                         class="image-2" /></a>
                                 <div class="service-info">
@@ -148,7 +148,7 @@
                                 </div>
                             </div>
                             <div class="service-wrapper">
-                                <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                                <a class="w-inline-block"
                                     target="_blank"><img src="https://www.travelingcebu.com/images/kawasan-falls-aerial-view.jpg" loading="lazy" sizes="100vw" alt=""
                                         class="image-2" /></a>
                                 <div class="service-info">
@@ -156,7 +156,7 @@
                                 </div>
                             </div>
                             <div class="service-wrapper">
-                                <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                                <a class="w-inline-block"
                                     target="_blank"><img src="https://sugbo.ph/wp-content/uploads/2021/06/Lexmin-Resort-and-Event-Place-Argao-3-2-1024x768.jpg" loading="lazy" sizes="100vw" alt=""
                                         class="image-2" /></a>
                                 <div class="service-info">
@@ -179,7 +179,7 @@
                     </div>
                     <div class="three-services-div">
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                            <a class="w-inline-block"
                                 target="_blank"><img src="https://media-cdn.tripadvisor.com/media/photo-s/16/1c/d5/89/the-facade-of-anzani.jpg" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
@@ -187,7 +187,7 @@
                             </div>
                         </div>
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                            <a class="w-inline-block"
                                 target="_blank"><img src="https://i0.wp.com/curtisrussel.com/wp-content/uploads/2021/08/malapascua-island-philipines-travel-guide-00007.jpg?resize=770%2C578&ssl=1" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
@@ -195,7 +195,7 @@
                             </div>
                         </div>
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                            <a class="w-inline-block"
                                 target="_blank"><img src="https://www.nopostcode.com/wp-content/uploads/2021/01/Smooth-Cafe-14-1024x682.jpg" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
@@ -205,7 +205,7 @@
                     </div>
                     <div class="three-services-div">
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                            <a class="w-inline-block"
                                 target="_blank"><img src="https://bluprint.onemega.com/wp-content/uploads/2018/02/pigandpalm-1.jpg" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
@@ -213,7 +213,7 @@
                             </div>
                         </div>
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
+                            <a class="w-inline-block"
                                 target="_blank"><img src="https://media-cdn.tripadvisor.com/media/photo-s/1d/9a/f0/21/new-thai-phoon.jpg" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
@@ -221,8 +221,8 @@
                             </div>
                         </div>
                         <div class="service-wrapper">
-                            <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"
-                                target="_blank"><img src="https://scontent.fmnl4-4.fna.fbcdn.net/v/t39.30808-6/272029218_4899564283444589_351913750824155004_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=e3f864&_nc_ohc=6mCUwJ2bXPAAX-Lwasr&_nc_ht=scontent.fmnl4-4.fna&oh=00_AT8wr1hVUeAT_3g5T0HM1_ldzlhz4z0XJ5K3R0bNBJmrBA&oe=634B3F6D" loading="lazy" sizes="100vw" alt=""
+                            <a class="w-inline-block"
+                                target="_blank"><img src="../static/rstaurnts/entoys-bakasihan-cordova1.jpg" loading="lazy" sizes="100vw" alt=""
                                     class="image-2" /></a>
                             <div class="service-info">
                                 <input type="submit" class="button-h4-header" name="place" value="Entoy's Bakasihan, Cordova">
@@ -274,7 +274,7 @@
             <div class="container">
                 <div class="footer-wrapper">
                     <div class="footer-left">
-                        <a href="index.html" aria-current="page" class="footer-logo w-inline-block w--current"><img
+                        <a aria-current="page" class="footer-logo w-inline-block w--current"><img
                                 src="../static/image/Busog-LaagSaCebu-logopng.png" alt="logo" width="207" srcset="
                                 ../static/image/Busog-LaagSaCebu-logopng.png  500w,
                                 ../static/image/Busog-LaagSaCebu-logopng.png 1920w
@@ -282,13 +282,13 @@
                     </div>
                     <div class="footer-right">
                         <h6 class="h6-heading light">
-                            <a href="about-us.html" class="footer-link">About Us</a>
+                            <a href="{{ url_for('dashboard.aboutUsPage', MyAcc=current_user.email) }}" class="footer-link">About Us</a>
                         </h6>
                         <h6 class="h6-heading light">
                             <a href="{{url_for('dashboard.carRentalPage', MyAcc=current_user.email)}}" class="footer-link">Car-Rental</a>
                         </h6>
                         <h6 class="h6-heading light">
-                            <a href="contact-us.html" class="footer-link">Contact Us</a>
+                            <a href="{{ url_for('dashboard.contactUsPage', MyAcc=current_user.email) }}" class="footer-link">Contact Us</a>
                         </h6>
                         <h6 class="h6-heading light last">
                             <a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
@@ -297,7 +297,7 @@
                     </div>
                     <div class="bottom-text">
                         <div class="small-text">
-                            <a href="/" aria-current="page" class="footer-bottom-link copyright first w--current">©
+                            <a aria-current="page" class="footer-bottom-link copyright first w--current">©
                                 2022-2023 Team Primogems</a><a
                                 href="https://docs.google.com/document/d/1FpoATEs17dU37utztkQXDlbT3QiB-nCN/edit"
                                 target="_blank" class="footer-bottom-link author-credit">Website by Team Primogems</a>
@@ -313,7 +313,7 @@
                                             fill="currentColor" />
                                     </svg>
                                 </div>
-                            </a><a href="mailto:teamprimogems@cit.edu?subject=Contact%20from%20Footer%20of%20Website"
+                            </a><a href="mailto:gvlang1234@gmail.com?subject=Contact%20from%20Footer%20of%20Website"
                                 class="w-inline-block">
                                 <div class="icon-3 w-embed">
                                     <svg width="420" height="420" viewBox="0 0 24 24" fill="none"

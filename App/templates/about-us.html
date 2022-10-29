@@ -5,7 +5,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Busog-Laag sa Cebu</title>
-    <link href="/static/css/dashboard.css" rel="stylesheet" type="text/css" />
+    <link href="/static/css/about.css" rel="stylesheet" type="text/css" />
     <link href="/static/image/logo-icon.png" rel="shortcut icon" type="image/x-icon" />
     <link href="/static/image/logo-icon.png" rel="apple-touch-icon" />
     <style>
@@ -30,6 +30,7 @@
 
 <body class="body">
     <!-- HEADER -->
+    <br> <br> <br> <br> <br> <br>
     <div data-w-id="12117823-98f8-04c8-2b96-1778d7c487f1" class="navigation wf-section">
         <div class="navbar-div">
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
@@ -53,7 +54,7 @@
         <div data-w-id="f5047796-1d62-8e15-8c25-ba81be0c693d" class="navigation-bottom-border"></div>
     </div>
    
- <!-- TOURIST SPOT / RESTAURANT DESCRIPTION-->
+ <!-- ABOUT US DESCRIPTION-->
         
  <div class="overflow-wrapper">
    
@@ -61,12 +62,20 @@
         <div class="section-large-2">
             <div class="container-x-small">
                 <div class="heading-wrapper-large margin-bottom-200">
-                    <h1 class="content-heading">Welcome to <span class="text-span">{{TsName}}</span></h1>
-                    <p>Learn our tourist spots and delicacies.</p>
+                    <h1 class="content-heading">About <span class="text-span">Us</span></h1>
+                    
                 </div>
                     <div class="container-team">
-                        <div class="image-block"><img src={{picture1}}
-                                loading="lazy" sizes="(max-width: 479px) 92vw, (max-width: 991px) 90vw, 756.0069580078125px" alt="attraction first image" class="image-cover"/>
+                        <div class="about-us-description">
+                            <br><br><br>
+                            <p>Busog-Laag Sa Cebu is a website application designed for tourist and Filipinos planning to look for places to enjoy and food delicacies to experience. The website does not only show carious restaurants but also famous tourist spots within Cebu. The website provides smart search for places and delicacies using Google map integration and allowing users to give reviews.</p>
+                            <p>The program is a website application where users, local or foreign, can search places or food delicacies that is native only in Cebu province. Also the website application allows reviews for the places and foods that they have already tried. Upon visiting the website, users would then be welcome by a greeting message for Cebu’s best tourist spots and delicacies. Within the homepage screen, the users would then be able to choose or search between looking for tourist spots or delicacies. Another feature added to the website is that users who don't have any access to vehicle transportation are asked and given suggestions for a cheap and comfortable ride. The main function of the website application is to search tourist spots and food delicacies in Cebu province.
+                            </p>
+                        </div>
+                        <div class="heading-wrapper-large margin-bottom-200">
+                            <br><br><br><br><br>
+                            <h2 class="content-heading">Meet the <span class="text-span">Team</span></h2>
+                            <p>Learn the purpose and the personality of our dear developers.</p>
                         </div>
 
 
@@ -84,34 +93,29 @@
                                                             data-duration="500" data-infinite="true">
                                                             <div class="mask-2 w-slider-mask">
                                                                 <div class="w-slide"><img
-                                                                        src={{picture2}}
+                                                                        src="{{url_for('static', filename='image/melvin.png')}}"
                                                                         loading="lazy"
-                                                                        sizes="(max-width: 991px) 100vw, 840px" alt="second image" class="image-4" />
+                                                                        sizes="(max-width: 1000px) 150vw, 840px" alt="first image" class="image-4" />
                                                                 </div>
                                                                 <div class="w-slide"><img
-                                                                        src={{picture3}}
+                                                                        src="{{url_for('static', filename='image/gerald.png')}}"
                                                                         loading="lazy"
-                                                                        sizes="(max-width: 991px) 100vw, 840px" alt="third image" class="image-4" />
+                                                                        sizes="(max-width: 1000px) 150vw, 840px" alt="second image" class="image-4" />
                                                                 </div>
                                                                 <div class="w-slide"><img
-                                                                        src={{picture1}}
+                                                                        src="{{url_for('static', filename='image/khess.png')}}"
                                                                         loading="lazy"
-                                                                        sizes="(max-width: 991px) 100vw, 840px" alt="fourth image" class="image-4" />
+                                                                        sizes="(max-width: 1000px) 150vw, 840px" alt="third image" class="image-4" />
                                                                 </div>
                                                                 <div class="w-slide"><img
-                                                                        src={{picture4}}
-                                                                        loading="lazy"
-                                                                        sizes="(max-width: 991px) 100vw, 840px" alt="fourth image" class="image-4" />
+                                                                    src="{{url_for('static', filename='image/joseph.png')}}"
+                                                                    loading="lazy"
+                                                                    sizes="(max-width: 1000px) 150vw, 840px" alt="fourth image" class="image-4" />
                                                                 </div>
                                                                 <div class="w-slide"><img
-                                                                        src={{picture5}}
-                                                                        loading="lazy"
-                                                                        sizes="(max-width: 991px) 100vw, 840px" alt="fourth image" class="image-4" />
-                                                                </div>
-                                                                <div class="w-slide"><img
-                                                                        src={{picture6}}
-                                                                        loading="lazy"
-                                                                        sizes="(max-width: 991px) 100vw, 840px" alt="fourth image" class="image-4" />
+                                                                    src="{{url_for('static', filename='image/Jade.png')}}"
+                                                                    loading="lazy"
+                                                                    sizes="(max-width: 1000px) 150vw, 840px" alt="fifth image" class="image-4" />
                                                                 </div>
                                                             </div>
                                                             <div class="w-slider-arrow-left">
@@ -128,20 +132,20 @@
                                                     <div class="w-layout-grid content-feature-grid">
                                                         <div class="content-feature-wrapper-2">
                                                             <div class="content-feature-detail">
-                                                                <div class="feature-content-title"> Be thrilled! (description)</div>
-                                                                <p>Set sail to some of the most beautiful beaches in the world!</p>
+                                                                <div class="feature-content-title">BE <span class="inspired">INSPIRED!!!</span></div>
+                                                                <p>This group of students who manage to create a website by applying the different skills they obtained through out thier journey in the computer engineering course.</p>
                                                             </div>
                                                         </div>
                                                         <div class="content-feature-wrapper-2">
                                                             <div class="content-feature-detail">
-                                                                <div class="feature-content-title">Enjoy and have fun!</div>
-                                                                <p>Visit the land up north and explore its beauty!</p>
+                                                                <div class="feature-content-title">ENJOY AND <span class="have">HAVE FUN!!!</span></div>
+                                                                <p>By the making of this website the developers faced different type of sturggles. These struggles made them persevere even more and acquired further knowledge to continue the project. The developers also did not forget to "chillax" and enjoy the moments they made.</p>
                                                             </div>
                                                         </div>
                                                         <div class="content-feature-wrapper-2">
                                                             <div class="content-feature-detail">
-                                                                <div class="feature-content-title">Memorable experience!</div>
-                                                                <p>Take in the sights, sounds and most importantly, food and drink!</p>
+                                                                <div class="feature-content-title">MEMORABLE <span class="exp">EXPERIENCE!!!</span></div>
+                                                                <p>The memories, the struggles, the frustration, that the team encountered will not be forgotten. By this may the developers even achieve more in thier career. Cheers!</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -152,126 +156,14 @@
                                 </div>
                             </div>
 
-                        <p class="paragraph-3"> {{cont}}<br /></p>
+                        <p class="paragraph-3"> <br /></p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-<!--
-    <div class="overflow-wrapper">
-        <div class="destination-details wf-section">
-            <div class="section-large-2 cruising">
-                <div class="container-x-small">
-                    <div class="heading-wrapper-large margin-bottom-200">
-                        <h2 class="content-heading">Tourist Spot or Activities</h2>
-                    </div>
-                    <div>
-                        <div class="w-layout-grid content-block">
-                            <div id="w-node-_4891b221-d284-ad50-c4b8-aeb9c1cebf15-9e8bbc7f" class="content-card">
-                                <div class="content-card-image">
-                                    <div data-delay="4000" data-animation="slide" class="slider-2 w-slider"
-                                        data-autoplay="false" data-easing="ease" data-hide-arrows="false"
-                                        data-disable-swipe="false" data-autoplay-limit="0" data-nav-spacing="3"
-                                        data-duration="500" data-infinite="true">
-                                        <div class="mask-2 w-slider-mask">
-                                            <div class="w-slide"><img
-                                                    src="https://assets.website-files.com/625ec8baec772453c4766aed/62e6eadec95a7774651588a6_Screen%20Shot%202022-07-31%20at%204.49.17%20PM.png00"
-                                                    loading="lazy"
-                                                    sizes="(max-width: 991px) 100vw, 840px" alt="second image" class="image-4" />
-                                            </div>
-                                            <div class="w-slide"><img
-                                                    src="https://assets.website-files.com/625ec8baec772453c4766aed/62710d6178e2daa1b8c3a4b8_pexels-errin-casano-2356064.jpg00"
-                                                    loading="lazy"
-                                                    sizes="(max-width: 991px) 100vw, 840px" alt="third image" class="image-4" />
-                                            </div>
-                                            <div class="w-slide"><img
-                                                    src="https://assets.website-files.com/625ec8baec772453c4766aed/62e6eb2a773ee06bee1aa3c4_Screen%20Shot%202022-07-31%20at%204.50.42%20PM.png00"
-                                                    loading="lazy"
-                                                    sizes="(max-width: 991px) 100vw, 840px" alt="fourth image" class="image-4" />
-                                            </div>
-                                        </div>
-                                        <div class="w-slider-arrow-left">
-                                            <div class="w-icon-slider-left"></div>
-                                        </div>
-                                        <div class="w-slider-arrow-right">
-                                            <div class="w-icon-slider-right"></div>
-                                        </div>
-                                        <div class="w-slider-nav w-round"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div id="w-node-_4891b221-d284-ad50-c4b8-aeb9c1cebf18-9e8bbc7f" class="content-features">
-                                <div class="w-layout-grid content-feature-grid">
-                                    <div class="content-feature-wrapper-2">
-                                        <div class="content-feature-detail">
-                                            <div class="feature-content-title">Tourist Spot 1!</div>
-                                            <p>Set sail to some of the most beautiful beaches in the world!</p>
-                                        </div>
-                                    </div>
-                                    <div class="content-feature-wrapper-2">
-                                        <div class="content-feature-detail">
-                                            <div class="feature-content-title">Tourist Spot 2!</div>
-                                            <p>Visit the land up north and explore its beauty!</p>
-                                        </div>
-                                    </div>
-                                    <div class="content-feature-wrapper-2">
-                                        <div class="content-feature-detail">
-                                            <div class="feature-content-title">Activity</div>
-                                            <p>Take in the sights, sounds and most importantly, food and drink!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>  -->
-        
-        <!--GOOGLE MAPS API -->
-        <div class="mapouter">
-            <div class="gmap_canvas">
-                <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                    src="https://maps.google.com/maps?width=452&amp;height=415&amp;hl=en&amp;q= {{TsName}}&amp;t=h&amp;z=8&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                    href="https://mcpenation.com/">MCPE Nation</a>
-            </div>
-            <style>
-                .mapouter {
-                    position: relative;
-                    text-align: right;
-                    width: 100%;
-                    height: 415px;
-                }
 
-                .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    width: 100%;
-                    height: 415px;
-                }
-
-                .gmap_iframe {
-                    height: 415px !important;
-                }
-            </style>  
-        </div> <br><br>
-         <br><br>
-        <!-- MORE INFO -->
-        <div class="section-cta">
-            <div class="container-3">
-                <div class="w-layout-grid cta-grid">
-                    <div id="w-node-_26ace333-f112-a6fd-fbe7-d129e6d549f9-8f8bbc37">
-                        <a class="cta-heading" href="{{url_for('dashboard.dashboardPage', MyAcc=current_user.email)}}">Team Primogems </a>
-                       
-                    </div>
-                    <div id="w-node-_9c3f8529-7b18-5b87-7d0b-72dbe798e1a3-8f8bbc37" class="affiliate-logo"><img
-                            src="/static/image/Busog-LaagSaCebu-logopng.png"
-                            loading="lazy" id="w-node-_26ace333-f112-a6fd-fbe7-d129e6d54a08-8f8bbc37" alt=""
-                            class="cta-image" /></div>
-                </div>
-            </div>
-        </div>
+      
         <!-- FOOTER -->
         <div class="footer wf-section">
             <div class="container">
@@ -285,21 +177,15 @@
                     </div>
                     <div class="footer-right">
                         <h6 class="h6-heading light">
-                            <a href="about-us.html" class="footer-link">About Us</a>
-                        </h6>
-                        <h6 class="h6-heading light">
                             <a href="{{url_for('dashboard.carRentalPage', MyAcc=current_user.email)}}" class="footer-link">Car-Rental</a>
                         </h6>
                         <h6 class="h6-heading light">
                             <a href="{{ url_for('dashboard.contactUsPage', MyAcc=current_user.email) }}" class="footer-link">Contact Us</a>
                         </h6>
-                        <h6 class="h6-heading light last">
-                            <a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
-                        </h6>
                     </div>
                     <div class="bottom-text">
                         <div class="small-text">
-                            <a aria-current="page" class="footer-bottom-link copyright first w--current">©
+                            <a href="/" aria-current="page" class="footer-bottom-link copyright first w--current">©
                                 2022-2023 Team Primogems</a><a
                                 href="https://docs.google.com/document/d/1FpoATEs17dU37utztkQXDlbT3QiB-nCN/edit"
                                 target="_blank" class="footer-bottom-link author-credit">Website by Team Primogems</a>
@@ -315,7 +201,7 @@
                                             fill="currentColor" />
                                     </svg>
                                 </div>
-                            </a><a href="mailto:gvlang1234@gmail.com?subject=Contact%20from%20Footer%20of%20Website"
+                            </a><a href="mailto:teamprimogems@cit.edu?subject=Contact%20from%20Footer%20of%20Website"
                                 class="w-inline-block">
                                 <div class="icon-3 w-embed">
                                     <svg width="420" height="420" viewBox="0 0 24 24" fill="none"

@@ -33,13 +33,13 @@
             <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease"
                 data-easing2="ease" role="banner" class="navbar w-nav">
                 <div class="logo-div">
-                    <a href="../templates/index.html" aria-current="page" class="logo w-nav-brand w--current"><img
+                    <a   aria-current="page" class="logo w-nav-brand w--current"><img
                             src="../static/image/Busog-LaagSaCebu-logopng.png" alt="logo" width="258" class="logo-image" /></a>
                 </div>
                 <nav role="navigation" class="nav-menu w-nav-menu">
-                    <a href="{{url_for('home.AboutPage')}}" class="nav-link w-nav-link">Services</a>
-                    <a href="{{url_for('home.AboutPage')}}" class="nav-link w-nav-link">About Us</a>
-                    <a href="{{url_for('home.AboutPage')}}" class="nav-link w-nav-link">Contact Us</a>
+                    <a href="{{url_for('forms.SignInPage')}}" class="nav-link w-nav-link">Car Rental</a>
+                    <a href="{{url_for('forms.SignInPage')}}" class="nav-link w-nav-link">About Us</a>
+                    <a href="{{url_for('forms.SignInPage')}}" class="nav-link w-nav-link">Contact Us</a>
                 </nav>
                 <div class="menu-button w-nav-button">
                     <img src="https://assets.website-files.com/625ec8baec772453c4766aed/625ec8baec77244a28766bac_icon-menu.svg"
@@ -111,7 +111,7 @@
                 </div>
                 <div class="three-services-div">
                     <div class="service-wrapper">
-                        <a href="https://en.wikipedia.org/wiki/Magellan%27s_Cross_Pavilion" class="w-inline-block" target="_blank">
+                        <a class="w-inline-block" target="_blank">
                             <img src="../static/image/magellans-cross.jpg" loading="lazy"
                                 sizes="(max-width: 479px) 75vw, (max-width: 767px) 71vw, 27vw" alt=""
                                 class="image-2" /></a>
@@ -127,7 +127,7 @@
                         </div>
                     </div>
                     <div class="service-wrapper">
-                        <a href="https://sugbo.ph/2021/travel-guide-bantayan/" class="link-block w-inline-block"  target="_blank"><img
+                        <a class="link-block w-inline-block"  target="_blank"><img
                                 src="../static/image/Virgin-Island-Bantayan.jpg" loading="lazy" sizes="100vw" alt="" class="image-2" /></a>
                         <div class="service-info">
                             <h4 class="h4-heading">Bantayan Island</h4>
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div class="service-wrapper">
-                        <a href="https://en.wikipedia.org/wiki/Cebu_Taoist_Temple" class="w-inline-block"  target="_blank"><img
+                        <a class="w-inline-block"  target="_blank"><img
                                 src="../static/image/Cebu-Taoist-Temple.jpg" loading="lazy" sizes="100vw" alt=""
                                 class="image-2" /></a>
                         <div class="service-info">
@@ -191,7 +191,7 @@
             <div class="container">
                 <div class="footer-wrapper">
                     <div class="footer-left">
-                        <a href="index.html" aria-current="page" class="footer-logo w-inline-block w--current"><img
+                        <a aria-current="page" class="footer-logo w-inline-block w--current"><img
                                 src="../static/image/Busog-LaagSaCebu-logopng.png" alt="logo" width="207" srcset="
                                 ../static/image/Busog-LaagSaCebu-logopng.png  500w,
                                 ../static/image/Busog-LaagSaCebu-logopng.png 1920w
@@ -199,16 +199,13 @@
                     </div>
                     <div class="footer-right">
                         <h6 class="h6-heading light">
-                            <a href="about-us.html" class="footer-link">About Us</a>
+                            <a href="{{url_for('forms.SignInPage')}}" class="footer-link">About Us</a>
                         </h6>
                         <h6 class="h6-heading light">
-                            <a href="services.html" class="footer-link">Services</a>
+                            <a href="{{url_for('forms.SignInPage')}}" class="footer-link">Car-Rentals</a>
                         </h6>
                         <h6 class="h6-heading light">
-                            <a href="contact-us.html" class="footer-link">Contact Us</a>
-                        </h6>
-                        <h6 class="h6-heading light">
-                            <a href="profile.html" class="footer-link">Profile</a>
+                            <a href="{{url_for('forms.SignInPage')}}" class="footer-link">Contact Us</a>
                         </h6>
                         <h6 class="h6-heading light last">
                             <a href="terms-and-conditions.html" class="footer-link">Terms & Conditions</a>
@@ -216,7 +213,7 @@
                     </div>
                     <div class="bottom-text">
                         <div class="small-text">
-                            <a href="/" aria-current="page" class="footer-bottom-link copyright first w--current">©
+                            <a aria-current="page" class="footer-bottom-link copyright first w--current">©
                                 2022-2023 Team Primogems</a><a
                                 href="https://docs.google.com/document/d/1FpoATEs17dU37utztkQXDlbT3QiB-nCN/edit"
                                 target="_blank" class="footer-bottom-link author-credit">Website by Team Primogems</a>
@@ -232,7 +229,7 @@
                                             fill="currentColor" />
                                     </svg>
                                 </div>
-                            </a><a href="mailto:teamprimogems@cit.edu?subject=Contact%20from%20Footer%20of%20Website"
+                            </a><a href="mailto:gvlang1234@gmail.com?subject=Contact%20from%20Footer%20of%20Website"
                                 class="w-inline-block">
                                 <div class="icon-3 w-embed">
                                     <svg width="420" height="420" viewBox="0 0 24 24" fill="none"
